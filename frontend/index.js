@@ -8,12 +8,12 @@ function showUsers(userList) {
     let userContent = "";
     for (let user of userList) {
         userContent += `<div class="user">
-                    <button class="update">
+                    <a href="create.html?mode=update&id=${user.id}">
                         <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button class="delete">
+                    </a>
+                    <a>
                         <i class="fa-solid fa-trash"></i>
-                    </button>
+                    </a>
                     <div class="email">${user.mail}</div>
                     <div class="name">${user.name}</div>
                 </div>`;
