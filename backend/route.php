@@ -10,5 +10,10 @@ if($resource == "/users"){
     if($method == "GET"){
         $users = getAllUsers();
         echo json_encode($users);
+    }else if($method == "POST"){
+        $data = file_get_contents("php://input");
+        $user = json_decode($data);
+        addUser($user);
+        echo json_encode(getUserByMail($user->mail));
     }
 }
