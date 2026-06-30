@@ -3,6 +3,7 @@
 use DomainException as DomainException;
 use \InvalidArgumentException as InvalidArgumentException;
 use \UnexpectedValueException as UnexpectedValueException;
+include('SignatureInvalidException.php');
 use \DateTime as DateTime;
 
 /**

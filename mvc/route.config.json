@@ -15,7 +15,8 @@
         "path":"/product",
         "method":"POST",
         "controller":"product",
-        "action":"create"
+        "action":"create",
+        "auth":true
     },
     {
         "path":"/product",
